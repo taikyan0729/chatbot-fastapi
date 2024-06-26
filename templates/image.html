@@ -1,0 +1,30 @@
+{% include 'layout.html'%}
+
+<div class "container mt-5">
+    <h3>
+        Add input to generate images from apersonal chatbot
+    </h3>
+
+    <form class="container" id="footer" action="/image" method = "POST">
+        <div class="input-group mb-3">
+            <input class="form-control" placeholder="質問を入力してください" name="user_input">
+            <button class="btn btn-outline-primary" type="submit">送信</button>
+        </div>
+
+    </form>
+
+    <div>
+        <div class="card text-center mt-3">
+            <div class="card-header">
+                Image Generation
+            </div>
+
+            <div class="card-body">
+                <img src="{{image_url}}" alt="image">
+
+            </div>
+            
+        </div>
+    </div>
+
+</div>
